@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.life.hangouts.NewEvent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#fff"
+        android:layout_marginBottom="3dp"
+        >
+
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ic_arrow_back_black_24dp"/>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/Privacy_settings"
+
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="#fff"/>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout android:id="@+id/container"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="120dp">
+        <MultiAutoCompleteTextView android:id="@+id/text"
+            android:background="#fff"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/button_bar"
+            android:layout_width="match_parent"
+            android:hint="Post an Event..."
+            android:padding="10dp"
+            android:layout_height="120dp" />
+        <LinearLayout android:id="@+id/button_bar"
+            android:orientation="horizontal"
+            android:background="#fff"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/action_image"
+                android:src="@drawable/ic_camera_alt_black_24dp"
+                android:layout_width="0dp"
+                android:layout_weight="25"
+                android:onClick="open"
+                android:background="@android:color/transparent"
+                android:layout_height="wrap_content" />
+            <ImageButton android:src="@drawable/ic_location_on_black_24dp"
+                android:layout_width="0dp"
+                android:layout_weight="25"
+                android:background="@android:color/transparent"
+                android:layout_height="wrap_content" />
+            <ImageButton android:src="@drawable/ic_tag_faces_black_24dp"
+                android:layout_width="0dp"
+                android:layout_weight="25"
+                android:background="@android:color/transparent"
+                android:layout_height="wrap_content" />
+            <ImageButton android:src="@drawable/ic_group_add_black_24dp"
+                android:layout_width="0dp"
+                android:layout_weight="25"
+                android:background="@android:color/transparent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </RelativeLayout>
+    <!--<android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:background="#eee"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/toolbar">
+        
+        -<AutoCompleteTextView
+            android:id="@+id/write"
+            android:background="@drawable/auto_text_complete"
+            android:layout_alignParentLeft="true"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            />
+
+    </android.support.v7.widget.CardView-->
+
+</RelativeLayout>

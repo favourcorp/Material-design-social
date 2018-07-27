@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:background="@drawable/background"
+    android:elevation="3dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView android:id="@+id/avatar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/images3"
+        android:layout_margin="5dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+    <TextView android:id="@+id/username"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/avatar"
+        android:layout_toEndOf="@+id/avatar"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:padding="4dp"
+        android:layout_marginTop="19dp"
+        android:textStyle="bold"
+        android:text="Ojiaku Favour Official"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_toLeftOf="@+id/image"
+        android:layout_toStartOf="@+id/image"
+        android:layout_height="wrap_content"
+        android:text="11:59pm"
+        android:layout_marginRight="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"/>
+
+    <ImageButton
+        android:id="@+id/menu_btn"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_expand_more_black_24dp"
+        android:background="@android:color/transparent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"/>
+    <TextView android:id="@+id/content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/username"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:padding="4dp"
+        android:text="Started: This event occurs when you start dragging an item in a layout, your application callsstartDrag() method to tell the system to start a drag. The arguments inside startDrag() method provide the data to be dragged, metadata for this data, and a callback for drawing the drag shadow.
+The system first responds by calling back to your application to get a drag shadow. It then displays the drag shadow on the device.
+Next, the system sends a  "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hangout_background"
+        android:padding="10dp"
+        android:layout_below="@+id/content"/>
+
+    <LinearLayout android:id="@+id/button_bar"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton android:src="@drawable/ic_comment_black_24dp"
+            android:layout_width="0dp"
+            android:layout_weight="25"
+            android:background="@android:color/transparent"
+            android:layout_height="wrap_content" />
+        <ImageButton android:src="@drawable/ic_favorite_border_black_24dp"
+            android:layout_width="0dp"
+            android:layout_weight="25"
+            android:background="@android:color/transparent"
+            android:layout_height="wrap_content" />
+        <ImageButton android:src="@drawable/ic_share_black_24dp"
+            android:layout_width="0dp"
+            android:layout_weight="25"
+            android:background="@android:color/transparent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

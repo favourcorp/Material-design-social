@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Approved"
+            android:icon="@drawable/ic_event_available_black_24dp"
+            android:title="Approved Invitation" />
+        <item
+            android:id="@+id/events"
+            android:icon="@drawable/ic_event_black_24dp"
+            android:title="Events" />
+        <item
+            android:id="@+id/pending"
+            android:icon="@drawable/ic_event_note_black_24dp"
+            android:title="Pending Invitation" />
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_build_black_24dp"
+            android:title="Settings" />
+    </group>
+
+    <item android:title="Communications">
+        <menu>
+            <item
+                android:id="@+id/following"
+                android:icon="@drawable/ic_perm_identity_black_24dp"
+                android:title="Following" />
+            <item
+                android:id="@+id/followers"
+                android:icon="@drawable/ic_people_outline_black_24dp"
+                android:title="Followers" />
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_reply_black_24dp"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

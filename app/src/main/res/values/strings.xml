@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Hangouts</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string-array name="Privacy_settings">
+        <item>Public</item>
+        <item>Private</item>
+        <item>Following</item>
+        <item>Followers</item>
+    </string-array>
+    <string name="title">Select</string>
+    <string name="camera">Open Camera</string>
+    <string name="gallery">Open Gallery</string>
+</resources>
